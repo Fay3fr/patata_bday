@@ -21,7 +21,7 @@ function language(choice) {
   if (choice === "arabic") {
     r.innerHTML = "✅ Correct. Faye already knew this. The scientific community agrees.";
   } else {
-    r.innerHTML = "❌ Incorrect. Nice attempt, Faye. Arabic Kaya remains undefeated.";
+    r.innerHTML = "❌ Incorrect. Nice attempt. Arabic Kaya remains undefeated.";
   }
 }
 
