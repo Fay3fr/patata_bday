@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaya Patata — Classified Birthday File</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="snow"></div><div id="birthdayEffects"><div id="balloons"></div><div id="confetti"></div></div>
+
+  <main>
+    <section class="screen active" id="intro">
+      <div class="classified">⚠ CLASSIFIED WOS RECORD ⚠</div>
+      <div class="terminal">
+        <p>SUBJECT: <strong>KAYA</strong></p>
+        <p>ALIAS: <strong>Kaya Patata</strong></p>
+        <p>THREAT LEVEL: <strong>QUESTIONABLY HIGH</strong></p>
+        <p>CURRENT STATUS: <strong>SOMEHOW FAYE'S FAVORITE PERSON</strong></p>
+      </div>
+      <p class="small">A highly unnecessary investigation into how an enemy from a game became this important.</p>
+      <button onclick="go('scanner')">ACCESS CLASSIFIED FILE →</button>
+    </section>
+
+    <section class="screen" id="scanner">
+      <div class="badge">KAYA ANALYSIS LAB™</div>
+      <h1>Scientific Analysis of Kaya</h1>
+      <p>Our highly qualified scientists have conducted an extremely serious investigation.</p>
+
+      <div class="stats">
+        <div><span>Patata production</span><b>100%</b><i><em style="width:100%"></em></i></div>
+        <div><span>Ignoring everyone</span><b>92%</b><i><em style="width:92%"></em></i></div>
+        <div><span>Ignoring Faye</span><b>20%</b><i><em style="width:20%"></em></i></div>
+        <div><span>Old</span><b>38%</b><i><em style="width:38%"></em></i></div>
+        <div><span>Crazy</span><b>100%</b><i><em style="width:100%"></em></i></div>
+        <div class="over-limit"><span>Jealousy when DJ appears</span><b>???%</b><i><em style="width:145%"></em></i></div>
+        <div><span>Ability to cause Faye problems</span><b>∞</b><i><em style="width:100%"></em></i></div>
+      </div>
+
+      <p class="warning">⚠ Scientists have been unable to determine how someone this chaotic became this lovable.</p>
+      <button onclick="go('lore')">INVESTIGATE THE ORIGIN →</button>
+    </section>
+
+    <section class="screen" id="lore">
+      <div class="badge">WOS ARCHIVES</div>
+      <h1>The Incident That Started Everything</h1>
+      <div class="timeline">
+        <article><span>01</span><h2>ENEMIES</h2><p>Faye and Kaya met in Whiteout Survival.</p><small>Initial relationship: ❌ enemies</small></article>
+        <article><span>02</span><h2>THE CONVERSATION</h2><p>Somehow, the enemies started talking.</p><small>Scientists immediately became concerned.</small></article>
+        <article><span>03</span><h2>THE PATATA INCIDENT</h2><p>Kaya discovered the devastating power of saying <strong>“patata”</strong> whenever Faye messed something up.</p><small>Faye has never recovered.</small></article>
+        <article><span>04</span><h2>THE CURRENT SITUATION</h2><p>Enemies: ❌<br>Teasing each other: ✅<br>Having ridiculous amounts of fun: ✅<br>Becoming extremely important to each other: ...oops.</p></article>
+      </div>
+      <button onclick="go('troops')">OPEN MILITARY RECORD →</button>
+    </section>
+
+    <section class="screen" id="troops">
+      <div class="badge">WOS MILITARY DATABASE</div>
+      <h1>Emotional Support Troops</h1>
+      <div class="report">
+        <p><strong>MISSION:</strong> Send troops to Kaya's city.</p>
+        <p><strong>TACTICAL PURPOSE:</strong> None.</p>
+        <p><strong>EMOTIONAL PURPOSE:</strong> Extremely important.</p>
+        <p><strong>EMOTIONAL SUPPORT VALUE:</strong> 10,000/10</p>
+      </div>
+      <button class="danger" onclick="deploy()">DEPLOY EMOTIONAL SUPPORT TROOPS</button>
+      <div id="troopResult" class="result"></div>
+      <button onclick="go('court')">CONTINUE →</button>
+    </section>
+
+    <section class="screen" id="court">
+      <div class="badge">KAYA'S COURT™</div>
+      <h1>Patata Crimes Tribunal</h1>
+      <p><strong>DEFENDANT:</strong> Faye</p>
+      <p><strong>CHARGE:</strong> Doing something bad.</p>
+      <p><strong>EVIDENCE:</strong> Extensive.</p>
+      <div class="gavel">⚖️🥔⚖️</div>
+      <button onclick="court()">APPEAL THE VERDICT</button>
+      <div id="courtResult" class="result"></div>
+      <button onclick="go('language')">SURVIVE →</button>
+    </section>
+
+    <section class="screen" id="language">
+      <div class="badge">LANGUAGE PREFERENCE TEST</div>
+      <h1>Which Kaya Is Sexier?</h1>
+      <p>Choose carefully. Faye's reputation is at stake.</p>
+      <div class="choices">
+        <button onclick="language('english')">🇬🇧 English Kaya</button>
+        <button onclick="language('arabic')">🗣️ Arabic Kaya</button>
+      </div>
+      <div id="languageResult" class="result"></div>
+      <button onclick="go('dj')">NEXT TEST →</button>
+    </section>
+
+    <section class="screen" id="dj">
+      <div class="badge">JEALOUSY DETECTION SYSTEM</div>
+      <h1>DO NOT PRESS</h1>
+      <p>Especially if the subject is named DJ.</p>
+      <button id="djButton" class="danger huge" onclick="dj()">MENTION DJ</button>
+      <div id="djResult" class="result"></div>
+      <button onclick="go('love')">PROCEED TO THE MOST IMPORTANT TEST →</button>
+    </section>
+
+    <section class="screen" id="love">
+      <div class="badge">THE FINAL SCIENTIFIC QUESTION</div>
+      <h1>Who Loves Who More?</h1>
+      <p>Faye and Kaya have been attempting to solve this for an unreasonable amount of time.</p>
+      <div class="choices">
+        <button onclick="love('kaya')">🩷 Kaya</button>
+        <button onclick="love('faye')">💙 Faye</button>
+      </div>
+      <div id="loveResult" class="result"></div>
+      <button onclick="go('final')">ACCEPT THE UNRESOLVED RESULTS →</button>
+    </section>
+
+    <section class="screen final" id="final">
+      <div class="floating">✦</div>
+      <div class="badge">CLASSIFIED FILE — FINAL ENTRY</div>
+      <h1>Okay, My Love.</h1>
+      <p>Enough nonsense.</p>
+      <div class="letter">
+        <p>It's kind of ridiculous when I think about it. We started as enemies in a stupid mobile game, and somehow you became one of the people I look forward to talking to the most.</p>
+        <p>You're one of the few people I can be completely stupid with, tease endlessly, fight over absolutely nothing with, and still feel completely at home with.</p>
+        <p>Somewhere between all the patatas, fake threats, emotional support troops, arguments about who loves who more, and all the beautiful craziness we've lived together, you became incredibly important to me.</p>
+        <p>So I made you this because a normal “happy birthday” felt way too little for you.</p>
+        <p><strong>Happy birthday Kaya, I wish you a healthy and happy life with a lot of laughs.❤️</strong></p>
+        <p>I'm really glad that enemy decided to start talking to me.</p>
+      </div>
+      <p class="signature">— Faye 🥔</p>
+      <button onclick="go('intro')">↻ RETURN TO CHAOS</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
