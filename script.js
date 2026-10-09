@@ -69,7 +69,6 @@ for (let i=0; i<45; i++) {
   snow.appendChild(s);
 }
 
-
 const balloons = document.getElementById("balloons");
 const confetti = document.getElementById("confetti");
 for (let i=0; i<12; i++) {
