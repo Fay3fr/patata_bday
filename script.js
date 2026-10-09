@@ -34,7 +34,7 @@ function dj() {
     "🚨 JEALOUSY LEVELS RISING. Faye, explain yourself.",
     "🚨 KAYA HAS ENTERED THE CHAT. Hide your evidence.",
     "🚨 SYSTEM OVERLOAD. Please stop mentioning DJ.",
-    "🥔 Kaya has officially sentenced Faye to patata."
+    "🥔 Kaya is officially going for Faye's head."
   ];
   r.innerHTML = messages[Math.min(djCount-1, messages.length-1)];
   const button = document.getElementById("djButton");
@@ -54,7 +54,7 @@ function love(choice) {
   }
   setTimeout(() => {
     r.innerHTML = "💗 FINAL RESULT: TIE.<br>Two idiots are attempting to quantify an unquantifiable amount of love.";
-  }, 850);
+  }, 1000);
 }
 
 const snow = document.getElementById("snow");
